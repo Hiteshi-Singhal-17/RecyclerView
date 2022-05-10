@@ -1,10 +1,10 @@
 package com.example.recyclerview;
 
-public class Companies {
+public class Company {
     String name;
     String url;
 
-    public Companies(String name, String url) {
+    public Company(String name, String url) {
         this.name = name;
         this.url = url;
     }
