@@ -1,6 +1,7 @@
 package com.example.recyclerview;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
@@ -35,5 +36,9 @@ public class MainActivity extends AppCompatActivity {
 
         //Finding the recycler view
         RecyclerView recyclerView=findViewById(R.id.recyclerView) ;
+        CompanyAdapter adapter=new CompanyAdapter(companies) ;
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
     }
 }

@@ -13,9 +13,9 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-public class CompanyAdapter extends RecyclerView.Adapter<CompanyAdapter.viewHolder>{
+public class CompanyAdapter extends RecyclerView.Adapter<CompanyAdapter.viewHolder> {
 
-    private final ArrayList<Company> companies ;
+    private final ArrayList<Company> companies;
 
     public CompanyAdapter(ArrayList<Company> companies) {
         this.companies = companies;
@@ -24,15 +24,15 @@ public class CompanyAdapter extends RecyclerView.Adapter<CompanyAdapter.viewHold
     @NonNull
     @Override
     public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater=LayoutInflater.from(parent.getContext());
-        View view = inflater.inflate(R.layout.recycler_view_row,parent,false) ;
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        View view = inflater.inflate(R.layout.recycler_view_row, parent, false);
         return new viewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
         holder.textView.setText(companies.get(position).getName());
-        Picasso.get().load(companies.get(position).getUrl()).into(holder.imageView); ;
+        Picasso.get().load(companies.get(position).getUrl()).into(holder.imageView);
     }
 
     @Override
@@ -41,12 +41,13 @@ public class CompanyAdapter extends RecyclerView.Adapter<CompanyAdapter.viewHold
     }
 
     public static class viewHolder extends RecyclerView.ViewHolder {
-        ImageView imageView ;
-        TextView textView ;
+        ImageView imageView;
+        TextView textView;
+
         public viewHolder(@NonNull View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.image) ;
-            textView=itemView.findViewById(R.id.textView) ;
+            imageView = itemView.findViewById(R.id.image);
+            textView = itemView.findViewById(R.id.textView);
 
         }
     }
