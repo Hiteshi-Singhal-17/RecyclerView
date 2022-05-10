@@ -3,8 +3,9 @@
     <style name="text_appearance">
         <item name="android:gravity">center_vertical</item>
         <item name="android:textSize">24sp</item>
-        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingStart">13dp</item>
         <item name="android:paddingEnd">8dp</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
 </resources>

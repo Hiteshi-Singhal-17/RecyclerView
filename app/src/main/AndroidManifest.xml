@@ -12,7 +12,8 @@
         android:theme="@style/Theme.RecyclerView">
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="Companies">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

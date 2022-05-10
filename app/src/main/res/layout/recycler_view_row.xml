@@ -2,14 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:id="@+id/recycler_view_item">
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
 
     <ImageView
         android:id="@+id/image"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="8dp"
         android:contentDescription="@string/image_view_description" />
 
     <TextView

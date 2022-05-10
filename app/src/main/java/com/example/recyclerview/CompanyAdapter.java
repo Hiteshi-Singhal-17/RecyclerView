@@ -37,7 +37,7 @@ public class CompanyAdapter extends RecyclerView.Adapter<CompanyAdapter.viewHold
 
     @Override
     public int getItemCount() {
-        return companies.size();
+           return companies.size();
     }
 
     public static class viewHolder extends RecyclerView.ViewHolder {
@@ -48,7 +48,6 @@ public class CompanyAdapter extends RecyclerView.Adapter<CompanyAdapter.viewHold
             super(itemView);
             imageView = itemView.findViewById(R.id.image);
             textView = itemView.findViewById(R.id.textView);
-
         }
     }
 }
