@@ -1,6 +1,7 @@
 package com.example.recyclerview;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
@@ -31,5 +32,8 @@ public class MainActivity extends AppCompatActivity {
         companies.add(microsoft);
         companies.add(zerodha);
         companies.add(paytm);
+
+        //Finding the recycler view
+        RecyclerView recyclerView=findViewById(R.id.recyclerView) ;
     }
 }
