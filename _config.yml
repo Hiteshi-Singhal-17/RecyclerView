@@ -1,1 +1,3 @@
 theme: jekyll-theme-cayman
+title: Recycler View
+description: Demonstrating the use of recyclerview to layout elements with a LinearLayoutManager
