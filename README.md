@@ -22,4 +22,3 @@ Scroll to see company name along with the logo.
 https://developer.android.com/guide/topics/ui/layout/recyclerview<br/>
 https://www.javatpoint.com/android-recyclerview-list-example<br/>
 https://stackoverflow.com/questions/40584424/simple-android-recyclerview-example
-https://stackoverflow.com/questions/40584424/simple-android-recyclerview-example
